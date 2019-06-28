@@ -1,6 +1,7 @@
 # lianjia scrapy_redis集成了布隆过滤器的代码改写
 
 ###布隆布隆过滤器代码, bloomfilter.py 并将此文件放置在scrapy_redis包下面
+###pip安装mmh3无法安装时，可改为国内豆瓣源 pip install mmh3 -i https://pypi.douban.com/simple/
 
 ```python
 # -*- coding: utf-8 -*-
