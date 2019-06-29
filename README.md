@@ -1,12 +1,12 @@
-#crawl里面主要是4个项目
+# crawl里面主要是4个项目
 + 第一个  Bilibili 的滑块验证
 + 第二个  pyppeteer + asyncio 
 + 第三个  app抓取抖音粉丝id
 + 第四个  scrapy_redis 抓取链家二手房
 
-#app主要是用来收restful后端 目前还在重构中....
+# app主要是用flask 做 restful后端接口开发 目前还在重构中....
 
-#frontVue是用来用vue.js构建前端  未完成....
+# frontVue是用来用vue.js构建前端  未完成....
 
 
 # lianjia scrapy_redis集成了布隆过滤器的代码改写
