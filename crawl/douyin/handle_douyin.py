@@ -2,6 +2,8 @@ import requests
 from lxml import etree
 from fontTools.ttLib import TTFont
 import re
+from .handle_db import handle_get_task
+import time
 
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36'
@@ -59,8 +61,10 @@ def handel_decode(input_data):
     print(user_info)
 
 
-def handle_douyin_web_share():
-    share_web_url = 'https://www.douyin.com/share/user/61002725169'
+def handle_douyin_web_share(task):
+    # share_web_url = 'https://www.douyin.com/share/user/61002725169'
+    share_web_url = 'https://www.douyin.com/share/user/%s'%task['share_id']
+
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36'
     }
@@ -69,6 +73,8 @@ def handle_douyin_web_share():
     #就行破解
     handel_decode(share_web_response.text)
 
+while True:
+    task = handle_get_task()
+    handle_douyin_web_share(task=task)
+    time.sleep(1)
 
-
-handle_douyin_web_share()
