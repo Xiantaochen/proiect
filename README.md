@@ -10,6 +10,7 @@
 # frontVue是用来用vue.js构建前端  未完成....
 
 # jsEncrty 主要是更新网站js加密
++ 1.js 是http://hgwsbs.hg12333.com/hgwt/member/login.jhtml 的密码加密的js代码改写
 
 # lianjia scrapy_redis集成了布隆过滤器的代码改写
 
