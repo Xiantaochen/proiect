@@ -11,6 +11,7 @@ attr==0.3.1
 attrs==18.2.0
 Automat==0.7.0
 backcall==0.1.0
+backcall==0.1.0
 baidu-aip==2.2.13.0
 beautifulsoup4==4.7.1
 billiard==3.6.0.0
@@ -26,6 +27,7 @@ cffi==1.12.2
 chardet==3.0.4
 click==6.7
 colorama==0.4.1
+configparser==3.7.4
 constantly==15.1.0
 cryptography==2.3.1
 cssselect==1.0.3
@@ -33,6 +35,7 @@ cymysql==0.9.13
 decorator==4.3.2
 defusedxml==0.5.0
 deprecation==2.0.6
+django==2.2.2
 dnspython==1.16.0
 docopt==0.6.2
 dominate==2.3.5
@@ -153,6 +156,7 @@ six==1.12.0
 sortedcontainers==2.0.5
 soupsieve==1.9.1
 SQLAlchemy==1.2.18
+sqlparse==0.3.0
 terminado==0.8.2
 testpath==0.4.2
 tornado==5.1.1
