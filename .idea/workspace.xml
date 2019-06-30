@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ada217d-4f71-42d8-8985-915126ea07f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/v1/verify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/SendSMS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/captcha/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/captcha/captcha.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/captcha/fonts/Arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/captcha/fonts/Georgia.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/captcha/fonts/actionj.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/qianniu_image_storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/yuntongxun/CCPRestSDK.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/yuntongxun/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/yuntongxun/xmltojson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/yuntongxun/接口说明.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawl/douban/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawl/douban/crawlDouban.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsEncrty/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/v1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/v1/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/v1/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/configs/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/configs/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,97 +16,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/SendSMS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="e#54#103#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/v1/verify.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding>
-                <element signature="e#1#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/v1/user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="204" column="47" lean-forward="true" selection-start-line="204" selection-start-column="47" selection-end-line="204" selection-end-column="47" />
-              <folding>
-                <element signature="e#1#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/qianniu_image_storage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-              <folding>
-                <element signature="e#27#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/configs/secure.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/configs/setting.py">
+        <entry file="file://$PROJECT_DIR$/crawl/douban/crawlDouban.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/v1/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-169">
-              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/v1/test.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/v1/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="380">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
-                <element signature="e#1#28#0" expanded="true" />
+                <element signature="e#43#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/libs/yuntongxun/接口说明.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/base_events.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="1763" selection-start-line="1763" selection-end-line="1763" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/events.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -146,8 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/configs/config.py" />
-        <option value="$PROJECT_DIR$/app/libs/response_code.py" />
         <option value="$PROJECT_DIR$/app/libs/errors.py" />
         <option value="$PROJECT_DIR$/app/libs/token_auth.py" />
         <option value="$PROJECT_DIR$/app/models/__init__.py" />
@@ -197,14 +118,16 @@
         <option value="$PROJECT_DIR$/app/api/v1/user.py" />
         <option value="$PROJECT_DIR$/app/libs/qianniu_image_storage.py" />
         <option value="$PROJECT_DIR$/app/configs/setting.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/crawl/douban/crawlDouban.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="263" />
-    <option name="y" value="201" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="129" />
+    <option name="y" value="-12" />
     <option name="width" value="1286" />
-    <option name="height" value="1014" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,17 +143,32 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="crawl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="crawl" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="jsEncrty" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WorkProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -262,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.captcha">
+  <component name="RunManager" selected="Python.crawlDouban">
     <configuration name="a66law" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,6 +244,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="crawlDouban" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawl/douban" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl/douban/crawlDouban.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -318,28 +278,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl/lawyer/lawyer/start.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawl/laywer/room" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl/laywer/room/start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -386,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.captcha" />
+        <item itemvalue="Python.crawlDouban" />
         <item itemvalue="Python.start (1)" />
+        <item itemvalue="Python.captcha" />
         <item itemvalue="Python.a66law" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.start" />
       </list>
     </recent_temporary>
   </component>
@@ -434,15 +372,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="263" y="201" width="1286" height="1014" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1369863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49510604" weight="0.4415437" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49510604" weight="0.6935301" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49510604" visible="true" weight="0.40195015" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49510604" weight="0.4864572" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49755302" weight="0.32941177" />
@@ -450,8 +389,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49265906" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50489396" side_tool="true" weight="0.42941177" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49510604" weight="0.307605" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49918434" weight="0.3282353" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49510604" weight="0.30415264" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49918434" weight="0.3280363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -498,6 +437,11 @@
           <line>1</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/crawl/douban/crawlDouban.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -518,20 +462,6 @@
     <SUITE FILE_PATH="coverage/project$redis_python.coverage" NAME="redis_python Coverage Results" MODIFIED="1561737068248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl/room" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawl/room/room/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawl/JS解密.py" />
-    <entry file="file://$PROJECT_DIR$/crawl/room/room/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#194#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawl/room/room/middlewares.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,19 +570,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawl/laywer/room/spiders/lianjia.py" />
     <entry file="file://$PROJECT_DIR$/crawl/laywer/redis_python.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-            <folding>
-              <element signature="e#0#14#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawl/room/room/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -673,13 +590,6 @@
     <entry file="file://$PROJECT_DIR$/crawl/lawyer/lawyer/test.py" />
     <entry file="file://$PROJECT_DIR$/crawl/lawyer/lawyer/items.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawl/lawyer/lawyer/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crawl/lawyer/lawyer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,35 +669,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/yuntongxun/接口说明.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/libs/SendSMS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="228">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#54#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/v1/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/v1/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/v1/verify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
+        <state relative-caret-position="95">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="e#1#14#0" expanded="true" />
@@ -795,40 +686,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/v1/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api/v1/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="204" column="47" lean-forward="true" selection-start-line="204" selection-start-column="47" selection-end-line="204" selection-end-column="47" />
+        <state relative-caret-position="3762">
+          <caret line="204" column="47" selection-start-line="204" selection-start-column="47" selection-end-line="204" selection-end-column="47" />
           <folding>
             <element signature="e#1#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/qianniu_image_storage.py">
+    <entry file="file://$PROJECT_DIR$/app/api/v1/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="266">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#27#39#0" expanded="true" />
+            <element signature="e#1#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/yuntongxun/接口说明.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/lawyer/lawyer/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="209">
+            <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <folding>
+              <element signature="e#0#14#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/v1/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/configs/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/configs/secure.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/configs/setting.py">
+    <entry file="file://$PROJECT_DIR$/app/libs/qianniu_image_storage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state>
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#27#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/v1/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/base_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="1763" selection-start-line="1763" selection-end-line="1763" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawl/douban/crawlDouban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
