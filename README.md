@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 ```
 
-###修改scrapy_redis包下的 dupefilter.py 文件，改为
+### 修改scrapy_redis包下的 dupefilter.py 文件，改为
 
 ```python
 import logging
