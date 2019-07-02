@@ -1,4 +1,4 @@
-# crawl里面主要是4个项目
+# crawl里面主要是5个项目
 + 第一个  Bilibili 的滑块验证
 + 第二个  pyppeteer + asyncio 
 + 第三个  app抓取抖音粉丝id
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 ```
 
-###修改scrapy_redis包下的 dupefilter.py 文件，改为
+### 修改scrapy_redis包下的 dupefilter.py 文件，改为
 
 ```python
 import logging
