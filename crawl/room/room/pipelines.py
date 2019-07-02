@@ -7,7 +7,7 @@
 
 import pymongo
 import pymysql
-
+import elasticsearch_dsl
 class MongoPipeline(object):
     def open_spider(self, spider):
         self.client = pymongo.MongoClient()
@@ -46,4 +46,15 @@ class MysqlPipeline(object):
 
     def close_spider(self,spider):
         self.cursor.close()
+        self.client.close()
+
+class ElasticsearchPipeline(object):
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient()
+
+    def process_item(self, item, spider):
+        self.client.room.lianjia.insert(item)
+        return item
+
+    def close_spider(self,spider):
         self.client.close()
