@@ -37,47 +37,56 @@ async  def getUrlResult(url = None):
         async with session.get(url=url, headers=headers) as resp:
             html = await resp.text()
             Etree = etree.HTML(html)
-            difang = Etree.xpath('//h1[@class = "xqy_core_tit"]/text()')[0]       #所在区域
-            difang = getDifang(difang)                                     #获取所在区域
 
-            lastNian = Etree.xpath("//tr[last()]//td[1]//text()")[-1]
-            Diff = int(2010 - int(lastNian))
+            times= Etree.xpath("//tr/td[1]/strong/text()")
 
-            YibenWenke = Etree.xpath("//tr[last()-{}]/td[2]/text()".format(Diff))[0]     #一本文科
-            YibenLike = Etree.xpath("//tr[last()-{}]/td[3]/text()".format(Diff))[0]      #一本理科
-            ErbenWenke = Etree.xpath("//tr[last()-{}]/td[4]/text()".format(Diff))[0]     #二本文科
-            ErbenLke = Etree.xpath("//tr[last()-{}]/td[5]/text()".format(Diff))[0]       #二本理科
-            Grade ={}
-            yiben = {
-                "文科":YibenWenke,
-                "理科":YibenLike,
-            }
-            erben = {
-                "文科":ErbenWenke,
-                "理科":ErbenLke
-            }
-            Grade = {
-                "地方":difang,
-                "一本":yiben,
-                "二本":erben
-            }
 
-            # with open('result.json', 'a') as f:
-            #     json.dump(Grade, f, indent=4)
-            #     f.write(',\n')
-            db = pymysql.connect(host="localhost", port=3306, user="root", password="302811", database="gaokao",
-                                 charset="utf8")
-            cursor = db.cursor()
-            sql = 'insert into fenshu VALUES ("%s","%s","%s","%s","%s")'%(difang,ErbenWenke,YibenLike,ErbenWenke,ErbenLke)
-            print(sql)
-            try:
-                cursor.execute(sql)
-                # 提交到数据库执行"
-                db.commit()
-            except:
-                db.rollback()
-            cursor.close()
-            db.close()
+
+            length = len(times)
+            for i in range(3,13):
+                try:
+                    nianfen = Etree.xpath("//tr[{}]//td[1]/strong/text()".format(i))[0]
+                    difang = Etree.xpath('//h1[@class = "xqy_core_tit"]/text()'.format(i))[0]  # 所在区域
+                    difang = getDifang(difang)  # 获取所在区域
+                    YibenWenke = Etree.xpath("//tr[{}]//td[2]/text()".format(i))[0]     #一本文科
+                    YibenLike = Etree.xpath("//tr[{}]//td[3]/text()".format(i))[0]      #一本理科
+                    ErbenWenke = Etree.xpath("//tr[{}]//td[4]/text()".format(i))[0]     #二本文科
+                    ErbenLke = Etree.xpath("//tr[{}]//td[5]/text()".format(i))[0]       #二本理科
+                    Grade ={}
+                    yiben = {
+                        "文科":YibenWenke,
+                        "理科":YibenLike,
+                    }
+                    erben = {
+                        "文科":ErbenWenke,
+                        "理科":ErbenLke
+                    }
+                    Grade = {
+                        "区域":difang,
+                        "年份":nianfen,
+                        "一本":yiben,
+                        "二本":erben
+                    }
+
+                    # with open('result.json', 'a') as f:
+                    #     json.dump(Grade, f, indent=4)
+                    #     f.write(',\n')
+                    db = pymysql.connect(host="localhost", port=3306, user="root", password="302811", database="gaokao",
+                                         charset="utf8")
+                    cursor = db.cursor()
+                    sql = 'insert into fenshu VALUES ("%s","%s","%s","%s","%s","%s")'%(difang,nianfen,ErbenWenke,YibenLike,ErbenWenke,ErbenLke)
+                    print(sql)
+                    try:
+                        cursor.execute(sql)
+                        # 提交到数据库执行"
+                        db.commit()
+                    except BaseException as E:
+                        print(E)
+                        db.rollback()
+                    cursor.close()
+                    db.close()
+                except BaseException as E:
+                    print(E)
 
 
 
