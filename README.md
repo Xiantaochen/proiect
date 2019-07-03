@@ -4,6 +4,7 @@
 + 第三个  app抓取抖音粉丝id
 + 第四个  scrapy_redis 抓取链家二手房
 + 第五个  asyncio + aiohttp抓取豆瓣电影信息
++ 第六个  asyncore 接入斗鱼弹幕三方协议抓取弹幕
 
 # app主要是用flask 做 restful后端接口开发 目前还在重构中....
 
