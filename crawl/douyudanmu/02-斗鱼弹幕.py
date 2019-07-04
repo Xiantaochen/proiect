@@ -76,7 +76,7 @@ class DataPacket():
             self.type = int.from_bytes(data_bytes[4:6],byteorder="little",signed=False)
             self.encrypt_flag = int.from_bytes(data_bytes[6:7],byteorder="little",signed=False)
             self.preserve_flag = int.from_bytes(data_bytes[7:8],byteorder="little",signed=False)
-            self.content = str(data_bytes[8:-1],encoding='utf-8')
+            self.content = str(data_bytes[8:-1],encoding="utf-8",errors='ignore')
 
 
     def get_length(self):
@@ -85,7 +85,7 @@ class DataPacket():
         :return:
         """
 
-        return 4 + 2 + 1 + 1 + len(self.content.encode('utf-8')) + 1
+        return 4 + 2 + 1 + 1 + len(self.content.encode(encoding='utf-8', errors='ignore')) + 1
 
     def get_bytes(self):
         data = bytes()
@@ -99,7 +99,7 @@ class DataPacket():
         data += self.type.to_bytes(2, byteorder="little", signed=False)
         data += self.encrypt_flag.to_bytes(1, byteorder="little", signed=False)
         data += self.preserve_flag.to_bytes(1, byteorder="little", signed=False)
-        data += self.content.encode("utf-8")
+        data += self.content.encode(encoding='utf-8', errors='ignore')
         data += b"\0"
         return data
 
@@ -213,6 +213,12 @@ class DouyuClient(asyncore.dispatcher):
         dq = DataPacket(type=DATA_PACK_TYPE_SEND,content=content)
         self.send_queue.put(dq)
 
+    def do_ping(self):
+        while True:
+            if self.ping_runing:
+                self.send_heart_data_packet()
+                time.sleep(40)
+
     def start_ping(self):
         """
         开始心跳
@@ -226,14 +232,6 @@ class DouyuClient(asyncore.dispatcher):
         :return:
         """
         self.ping_runing = False
-
-    def do_ping(self):
-        while True:
-            if self.ping_runing:
-                self.send_heart_data_packet()
-                time.sleep(40)
-
-
 
     def do_callback(self):
         """
