@@ -127,6 +127,7 @@ class DouyuClient(asyncore.dispatcher):
         self.heart_thread = threading.Thread(target=self.do_ping)
         self.heart_thread.setDaemon(True)
         self.ping_runing = False
+        self.heart_thread.start()
         pass
 
     def handle_connect(self):
@@ -217,7 +218,7 @@ class DouyuClient(asyncore.dispatcher):
         while True:
             if self.ping_runing:
                 self.send_heart_data_packet()
-                time.sleep(40)
+                time.sleep(45)
 
     def start_ping(self):
         """
@@ -252,17 +253,19 @@ def data_callback(client,dp):
     :return:
     """
     response = decode_to_dict(dp.content)
-    if response['type'] == "loginres":
-        print("登录成功 :",response)
-        client.join_room_group()
-        pass
-    elif response["type"] == "chatmsg":
-        print("{}:{}".format(response["nn"],response["txt"]))
-    pass
+    try:
+        if response['type'] == "loginres":
+            print("登录成功 :",response)
+            client.join_room_group()
+            pass
+        elif response["type"] == "chatmsg":
+            print("{}:{}".format(response["nn"],response["txt"]))
+    except Exception as e:
+        print(e)
 
 if __name__ == '__main__':
     room_id = input('请输入房间ID： ')
     client  =DouyuClient("openbarrage.douyutv.com", 8601,callback = data_callback)
     client.login_room_id(room_id)
-    asyncore.loop(timeout=5)
+    asyncore.loop(timeout=200)
 

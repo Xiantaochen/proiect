@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ada217d-4f71-42d8-8985-915126ea07f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+            <state relative-caret-position="124">
+              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -73,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawl/douyudanmu/03-.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="66" column="86" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="86" />
+            <state relative-caret-position="285">
+              <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
               <folding>
                 <element signature="e#36#75#0" expanded="true" />
               </folding>
@@ -126,6 +125,7 @@
       <find>dj</find>
       <find>get</find>
       <find>ping_runing</find>
+      <find>utf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,8 +189,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="502" />
-    <option name="y" value="74" />
+    <option name="x" value="865" />
+    <option name="y" value="129" />
     <option name="width" value="1157" />
     <option name="height" value="890" />
   </component>
@@ -467,23 +467,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="502" y="74" width="1157" height="890" extended-state="0" />
+    <frame x="865" y="129" width="1157" height="890" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86527514" visible="true" weight="0.23235032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.13472486" side_tool="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.89342946" visible="true" weight="0.58652574" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.89342946" visible="true" weight="0.65521795" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49278846" weight="0.3976222" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49679488" weight="0.12813738" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4911859" weight="0.32884398" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4911859" weight="0.32760897" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.10657051" side_tool="true" weight="0.40852973" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48958334" weight="0.055482168" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48958334" weight="0.4993395" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49839744" weight="0.32760897" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -611,33 +611,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>256</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>197</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>202</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>203</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>204</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py</url>
-          <line>205</line>
-          <option name="timeStamp" value="83" />
+          <line>212</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1003,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawl/douyudanmu/03-.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="66" column="86" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="86" />
+        <state relative-caret-position="285">
+          <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
           <folding>
             <element signature="e#36#75#0" expanded="true" />
           </folding>
@@ -1013,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawl/douyudanmu/02-斗鱼弹幕.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        <state relative-caret-position="124">
+          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
