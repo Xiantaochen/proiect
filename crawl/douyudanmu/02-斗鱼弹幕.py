@@ -132,21 +132,26 @@ class DouyuClient(asyncore.dispatcher):
     def handle_connect(self):
         print("连接成功")
         self.start_ping()
-        dq = self.send_queue.get()
-        dq_length = dq.get_length()
-        dq_length_data = dq_length.to_bytes(4, byteorder="little",signed=False)
-        self.send(dq_length_data)
-
-        #发送数据包二级制
-        self.send(dq.get_bytes())
-        self.send_queue.task_done()
         pass
 
     def writable(self):
         return self.send_queue.qsize() > 0
 
     def handle_write(self):
+        #从发送数据包的队列中获取数据包对象
+        dq = self.send_queue.get()
+
+        #获取数据包的长度，并且发送给服务器
+        dq_length = dq.get_length()
+        dq_length_data = dq_length.to_bytes(4,byteorder="little",signed=False)
+        self.send(dq_length_data)
+
+        #发送数据包二进制数据
+        self.send(dq.get_bytes())
+        self.send_queue.task_done()
         pass
+
+
 
     def readable(self):
         return True
@@ -180,12 +185,9 @@ class DouyuClient(asyncore.dispatcher):
             "type" :"loginreq",
             "roomId" : str(roomId)
         }
-
         # 构建登录数据包
         content = encode_content(send_data)
-        content = "type@=loginreq/roomid@={}/".format(roomId)
         login_dq = DataPacket(DATA_PACK_TYPE_SEND,content=content)
-
         self.send_queue.put(login_dq)
 
     def join_room_group(self):
@@ -196,7 +198,7 @@ class DouyuClient(asyncore.dispatcher):
         send_data = {
             "type" :"joingroup",
             "rid":str(self.roomId),
-            "gid":"-9999"
+            "gid":'-9999'
         }
         content = encode_content(send_data)
         dq = DataPacket(type=DATA_PACK_TYPE_SEND,content = content)
@@ -209,7 +211,7 @@ class DouyuClient(asyncore.dispatcher):
         }
         content = encode_content(send_data)
         dq = DataPacket(type=DATA_PACK_TYPE_SEND,content=content)
-        self.send_queue.put(content)
+        self.send_queue.put(dq)
 
     def start_ping(self):
         """
@@ -255,12 +257,14 @@ def data_callback(client,dp):
     if response['type'] == "loginres":
         print("登录成功 :",response)
         client.join_room_group()
+        pass
     elif response["type"] == "chatmsg":
-        print("{}:{}".format(response["nn"],response["text"]))
+        print("{}:{}".format(response["nn"],response["txt"]))
     pass
 
 if __name__ == '__main__':
+    room_id = input('请输入房间ID： ')
     client  =DouyuClient("openbarrage.douyutv.com", 8601,callback = data_callback)
-    client.login_room_id(10029)
+    client.login_room_id(room_id)
     asyncore.loop(timeout=5)
 
