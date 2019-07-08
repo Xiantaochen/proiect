@@ -180,6 +180,7 @@ class DouyuClient(asyncore.dispatcher):
         self.stop_runing()
         self.close()
 
+
     def login_room_id(self,roomId):
         self.roomId = roomId
         send_data = {

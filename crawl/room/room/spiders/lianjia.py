@@ -9,8 +9,8 @@ class LianjiaSpider(RedisSpider):
     redis_key = "lianjia:start_urls"
 
     index = 2
-    base_url = "https://su.lianjia.com/ershoufang/pg{}/"
-    # https://su.lianjia.com/ershoufang/pg1
+    base_url = "https://bj.lianjia.com/ershoufang/pg{}/"
+    # https://bj.lianjia.com/ershoufang/pg1
     def parse(self, response):
         urls  = response.xpath('//div[@class = "info clear"]/div[@class="title"]/a/@href').extract()
         for url in urls:
