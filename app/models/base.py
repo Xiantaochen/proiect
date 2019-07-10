@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy as _SQLAlcmemy, BaseQuery
-from sqlalchemy import SmallInteger, Column, Integer
+from sqlalchemy import SmallInteger, Column, Integer, DateTime
 from contextlib import contextmanager
 from datetime import datetime
 from app.libs.error_code import NotFound
@@ -68,6 +68,5 @@ class Base(db.Model):
 
 class BaseModel(object):
     """模型基类"""
-    create_time=db.Column(db.DateTime,default=datetime.now()) #记录模型类创建时间
-    update_time=db.Column(db.DateTime,default=datetime.now,onupdate=datetime.now())#记录模型类更新时间
-
+    create_time=Column(DateTime,default=datetime.now()) #记录模型类创建时间
+    update_time=Column(DateTime,default=datetime.now,onupdate=datetime.now())#记录模型类更新时间
