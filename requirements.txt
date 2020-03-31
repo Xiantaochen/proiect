@@ -16,7 +16,7 @@ baidu-aip==2.2.13.0
 beautifulsoup4==4.7.1
 billiard==3.6.0.0
 bitarray==0.9.3
-bleach==3.1.0
+bleach==3.1.4
 blinker==1.4
 brotlipy==0.7.0
 bs4==0.0.1
