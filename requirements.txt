@@ -29,7 +29,7 @@ click==6.7
 colorama==0.4.1
 configparser==3.7.4
 constantly==15.1.0
-cryptography==2.3.1
+cryptography==3.2
 cssselect==1.0.3
 cymysql==0.9.13
 decorator==4.3.2
