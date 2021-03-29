@@ -117,7 +117,7 @@ PyDispatcher==2.0.5
 pydivert==2.1.0
 pyee==6.0.0
 pygeocoder==1.2.5
-Pygments==2.3.1
+Pygments==2.7.4
 PyHamcrest==1.9.0
 PyMitmProxy==0.0.1
 pymongo==3.8.0
