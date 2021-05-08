@@ -42,7 +42,7 @@ dominate==2.3.5
 elasticsearch==7.0.2
 elasticsearch-bdoc==2.4.1
 entrypoints==0.3
-eventlet==0.24.1
+eventlet==0.31.0
 facebook-wda==0.3.3
 fake-useragent==0.1.11
 fire==0.1.3
