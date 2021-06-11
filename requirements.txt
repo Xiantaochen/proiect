@@ -173,7 +173,7 @@ w3lib==1.20.0
 wcwidth==0.1.7
 webencodings==0.5.1
 WebOb==1.8.5
-websockets==6.0
+websockets==9.1
 weditor==0.2.0
 Werkzeug==0.14.1
 whichcraft==0.5.2
