@@ -94,7 +94,7 @@ mitmproxy==4.0.4
 mmh3==2.5.1
 monotonic==1.5
 multidict==4.5.2
-nbconvert==5.4.1
+nbconvert==6.3.0
 nbformat==4.4.0
 notebook==5.7.8
 numpy==1.16.1
