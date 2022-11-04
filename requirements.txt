@@ -162,7 +162,7 @@ testpath==0.4.2
 tornado==5.1.1
 tqdm==4.32.1
 traitlets==4.3.2
-Twisted==18.9.0
+Twisted==22.10.0
 -e git+https://github.com/openatx/uiautomator2@cd64083e0a105b62259a94037be1685063bf9abd#egg=uiautomator2
 urllib3==1.24.1
 urlparser==0.1.2
